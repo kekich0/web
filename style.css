@@ -1,0 +1,475 @@
+/*Шрифт*/
+@font-face 
+{
+    font-family: 'Font';
+    src: url('font/Anonymous_Pro.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Header*/
+header
+{
+    background-color: #3d3d3d; 
+    height: 80px; 
+    display: flex; 
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo
+{
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+}
+
+.logo_img
+{
+    height: 50px; 
+    margin-left: 10px;
+}
+
+.logo_text
+{
+    margin-left: 10px; 
+    color: rgb(207, 207, 207); 
+    font-size: 25px;
+}
+
+.navigation
+{
+    margin-left: auto; 
+    margin-right: 10px;  
+    font-size: 20px; 
+    word-spacing: -6px;
+}
+
+.navigation a
+{
+    margin-left: 15px; 
+    text-decoration: none; 
+    color: rgb(207, 207, 207);
+}
+
+.nav_about
+{
+    margin-bottom: -200px;
+}
+
+/*Main*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/bg.png);
+    font-family: Font !important;
+}
+
+.main_bg
+{
+    padding-top: 60px;
+    width: 975px; 
+    height: 100%; 
+    background-color: rgba(238, 238, 238, 0.1); 
+    margin: 0 auto;
+}
+
+/*Плеєр гри*/
+.game
+{
+    width: 975px; 
+    height: 410px; 
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden;
+}
+
+.game_bg
+{
+    width: 625px; 
+    height: 349px; 
+    background-image: url(image/bg2.png); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+.button
+{
+    width: 167px;
+    height: 53px; 
+    background-color: #ff8c00; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 4px;
+
+    color: white; 
+    font-size: 18px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    user-select: none;
+}
+
+.button:hover
+{
+    background-color: #e07b00;
+}
+
+/*Основна частина*/
+.main_part
+{
+    width: 975px; 
+    height: 1030px; 
+    display: flex;
+}
+
+/*Текст*/
+.text
+{
+    width: 545px; 
+    height: 840px;
+    margin-left: 15px;
+
+    color: rgb(33, 33, 33);
+    font-size: 19px; 
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.text p 
+{
+    margin: 0; 
+}
+
+.image0
+{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    height: 277px !important;
+    width: 545px !important;
+    margin-left: -15px;
+}
+
+.link
+{
+    color: #ff8c00;
+}
+
+/*Завантаження гри*/
+.big_text
+{
+    font-size: 25px !important;
+    font-weight: bold !important;
+    width: 300px !important;
+}
+
+.download
+{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+
+    color: black; 
+    font-size: 16px; 
+    text-decoration: none;  
+    user-select: none;
+}
+
+.download_button
+{
+    width: 120px;
+    height: 38px; 
+    background-color: #ff8c00; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 4px;
+
+    color: white; 
+    font-size: 16px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    user-select: none;
+}
+
+.download_button:hover
+{
+    background-color: #e07b00;
+}
+
+.download_text_1
+{
+    margin-left: 7px;
+    color: #262626;
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.download_text_2
+{
+    margin-left: 7px;
+    color: #3a3a3a;
+    font-size: 18px; 
+}
+
+i
+{
+    margin-top: -3px;
+    color: #393939;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.icon
+{
+    margin-top: -2px;
+    color: #393939;
+    margin-left: 5px;
+    width: 19px;
+}
+
+/*Випадаючий список зі слайдером*/
+.custom-dropdown 
+{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.owl-carousel 
+{
+    position: fixed !important;
+    width: 545px !important;
+}
+
+.slider_img
+{
+    height: 100px;
+    width: 100px !important;
+}
+
+/*CSS анімація*/
+.lds-dual-ring, .lds-dual-ring:after 
+{
+  box-sizing: border-box;
+}
+
+.lds-dual-ring 
+{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.lds-dual-ring:after 
+{
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring 
+{
+  0% 
+  {
+    transform: rotate(0deg);
+  }
+  100% 
+  {
+    transform: rotate(360deg);
+  }
+}
+
+/*Скріншоти з гри*/
+.screenshots
+{
+    width: 385px;
+    margin-left: 15px;
+}
+
+.screenshots img
+{
+    width: 385px; 
+    margin-bottom: 5px;
+}
+
+/*Збільшення зображення*/
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container 
+{
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-container:hover 
+{
+    transform: scale(1.02);
+}
+
+.full-screen 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.full-screen img 
+{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.close 
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer
+{
+    background-color: #3d3d3d; 
+    height: 100px; 
+    width: 975px; 
+    margin: 0 auto; 
+    display: flex;
+}
+
+.footer_left
+{
+    width: 400px; 
+    margin-right: auto; 
+    margin-left: 15px; 
+    margin-top: 8px; 
+    line-height: 1;
+}
+
+.footer_right
+{
+    width: 400px; 
+    margin-left: auto;  
+    margin-right: 15px; 
+    margin-top: 8px; 
+    line-height: 1; 
+    text-align: right;
+}
+
+.footer_link
+{
+    text-decoration: none; 
+    color: rgb(207, 207, 207); 
+    font-size: 20px; 
+    word-spacing: -6px;
+}
+
+.footer_text
+{
+    color: rgb(207, 207, 207); 
+    font-size: 17px; 
+    word-spacing: -6px;
+}
+
+/*Про мене*/
+.nav_about_me
+{
+    margin-top: -200px;
+}
+
+.nav_education
+{
+    margin-top: 280px;
+}
+
+.about
+{
+    padding-top: 20px; 
+    height: 500px;
+    display: flex;
+    color: rgb(33, 33, 33);
+    word-spacing: -6px;
+}
+
+.resume
+{
+    width: 550px; 
+    height: 1000px; 
+    margin-left: 15px;
+}
+
+.about_name
+{
+    font-size: 40px; 
+    line-height: 1.2;
+}
+
+.about_name_2
+{ 
+    font-size: 25px; 
+    line-height: 1.0;
+}
+
+.about_text_big
+{
+    font-weight: bold; 
+    font-size: 25px; 
+    line-height: 1.0;
+}
+
+.about_text
+{
+    font-size: 19px; 
+    line-height: 1.0;
+}
+
+.link_text
+{
+    text-decoration: none; 
+    color: #3a3a3a;
+    font-size: 22px; 
+    word-spacing: -6px;
+}
+
+.social
+{
+    width: 395px; 
+    height: 1000px; 
+    margin-left: 15px; 
+    margin-top: 7px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.other
+{
+    height: 450px;
+}
