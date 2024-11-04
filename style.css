@@ -152,9 +152,9 @@ body
 {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-    height: 277px !important;
-    width: 545px !important;
-    margin-left: -15px;
+    height: 240px !important;
+    width: 240px !important;
+    margin-left: 100px;
 }
 
 .link
@@ -245,7 +245,7 @@ i
 .owl-carousel 
 {
     position: fixed !important;
-    width: 545px !important;
+    width: 945px !important;
 }
 
 .slider_img
@@ -301,8 +301,9 @@ i
 
 .screenshots img
 {
+    margin-top: 20px;
     width: 385px; 
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
 /*Збільшення зображення*/
@@ -415,7 +416,7 @@ footer
     padding-top: 20px; 
     height: 500px;
     display: flex;
-    color: rgb(33, 33, 33);
+    color: rgb(216, 216, 216);
     word-spacing: -6px;
 }
 
@@ -454,7 +455,7 @@ footer
 .link_text
 {
     text-decoration: none; 
-    color: #3a3a3a;
+    color: rgb(216, 216, 216);
     font-size: 22px; 
     word-spacing: -6px;
 }

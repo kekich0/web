@@ -31,4 +31,3 @@ function closeImage()
     const fullScreenContainer = document.getElementById('fullScreenContainer');
     fullScreenContainer.style.display = 'none';
 }
-
