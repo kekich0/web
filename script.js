@@ -2,7 +2,7 @@ $(function() {
     //owlCarousel
     $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-        margin: 5,
+        margin: 10,
         autoWidth: true
     });
     });

@@ -50,38 +50,68 @@
     <!--Main-->
     <body>
         <!--Сірий фон-->
-        <div class="main_bg" id="start">
-            <div class="about">
-
-                <div class="resume">
-                    <span class="about_name">Кудибин Назар<br></span>
-                    <span class="about_name_2">Геймдизайнер<br><br></span>
-                    <span class="about_text_big">Коротке резюме:<br></span>
-                    <span class="about_text">Телефон: +380 49 535 1789<br>Email: nazar.kudybyn.pp.2023@lpnu.ua<br> Адреса: вулиця Карпінського, 24, Львів, Львівська область<br><br></span>
-                    <span class="about_name_2">Мета:<br></span>
-                    <span class="about_text">Початківець у розробці ігор, прагну розвиватися в індустрії, використовуючи свої навички програмування та творчий підхід для створення інноваційних ігор.<br><br></span>
-                    <span class="about_text_big">Освіта:<br></span>
-                    <span class="about_text">Національний університет "Львівська політехніка"<br>Бакалавр в галузі ігрової архітектури та дизайну</span>
+        <div class="main_bg" id="start">            
+            <div class="gallery1">
+                <div class="gallery_header">
+                    <span>Галерея робіт ком'юніті</span>
                 </div>
-
-                <div class="social">
-                    <h3>Мої соцмережі:<br></h3>
-                    <a href="https://x.com/NKudybyn" class="link_text">
-                        <i class="lab la-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <br>
-                    <a href="https://www.newgrounds.com/portal/view/942479" class="link_text">
-                        <img src="./image/icon/newgrounds.png" class="icon" style="width: 25px;">
-                        <span>Newgrounds</span>
-                    </a>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.673303959256!2d24.010825357441497!3d49.83594454297356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add790d2c8979%3A0x816b961499e08d49!2z0J3QoyAi0JvRjNCy0ZbQstGB0YzQutCwINC_0L7Qu9GW0YLQtdGF0L3RltC60LAi!5e0!3m2!1suk!2sua!4v1730466484347!5m2!1suk!2sua" width="380" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--Слайдери зображень-->
+                <span class="gallery_header2">Карти розміром 3x3:</span>
+                <div class="gallery_slider">
+                    <div class="owl-carousel owl-theme">
+    
+                        <div onclick="openImage('image/gallery/1_1.png')">
+                            <img src="image/gallery/1_1.png" class="slider_img_2 image-container">
+                        </div>
+    
+    
+                    </div>
                 </div>
-            </div>
-            <div id="myDiv"></div>
-            <div class="other">
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-d18a57a8-63a7-4bbc-b0db-6e72b3302bc7" data-elfsight-app-lazy></div>
+    
+                <span class="gallery_header2">Карти розміром 4x4:</span>
+                <div class="gallery_slider">
+                    <div class="owl-carousel owl-theme">
+    
+                        <div onclick="openImage('image/gallery/2_1.png')">
+                            <img src="image/gallery/2_1.png" class="slider_img_2 image-container">
+                        </div>
+    
+                        <div onclick="openImage('image/gallery/2_2.jpg')">
+                            <img src="image/gallery/2_2.jpg" class="slider_img_2 image-container">
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                <span class="gallery_header2">Карти розміром 5x5 і більше:</span>
+                <div class="gallery_slider">
+                    <div class="owl-carousel owl-theme">
+    
+                        <div onclick="openImage('image/gallery/3_1.png')">
+                            <img src="image/gallery/3_1.png" class="slider_img_2 image-container">
+                        </div>
+    
+                        <div onclick="openImage('image/gallery/3_2.png')">
+                            <img src="image/gallery/3_2.png" class="slider_img_2 image-container">
+                        </div>
+    
+                        <div onclick="openImage('image/gallery/3_3.png')">
+                            <img src="image/gallery/3_3.png" class="slider_img_2 image-container">
+                        </div>
+    
+                        <div onclick="openImage('image/gallery/3_99.png')">
+                            <img src="image/gallery/3_99.png" class="slider_img_2 image-container">
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="full-screen" id="fullScreenContainer">
+                    <span class="close" onclick="closeImage()">&times;</span>
+                    <img id="fullScreenImage" src="" alt="Full Screen Image">
+                </div>
             </div>
         </div>
     </body>
