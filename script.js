@@ -7,6 +7,8 @@ $(function() {
     });
     });
 
+    $('.owl-carousel').trigger('refresh.owl.carousel');
+
     //Ініціалізація owlCarousel при відкритті випадаючого списку
     $('.dropdown').on('shown.bs.dropdown', function () {
     $('.owl-carousel').trigger('refresh.owl.carousel');
